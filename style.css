@@ -4,8 +4,12 @@
  box-sizing: border-box;
 }
 
-img{
+.main-img{
  max-width: 540px;
+}
+
+.mob-img{
+ display: none;
 }
 
 .container{
@@ -20,7 +24,23 @@ color: white;
 display: flex;
 flex-direction: row-reverse;
 max-width: 1112px;
+background-color: hsl(244, 38%, 16%);
+position: relative;
  border: 1px solid red;
+}
+
+.img-overlay{
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ left: 51.3%;
+ right: 0;
+ background-color: rgb(142, 57, 196);
+ filter: contrast(1.5);
+ filter: hue-rotate(1.4);
+ opacity: 0.4;
+ width: 48.7%;
+ height: 30.5em;
 }
 
 
@@ -28,7 +48,8 @@ max-width: 1112px;
  display: flex;
  flex-direction: column;
  justify-content: space-between;
- margin: 4.4em 7.4em 4.5em 4.375em;
+ gap: 5em;
+ margin: 4.4em 7.2em 4.5em 4.375em;
  border: 1px solid green;
 }
 
@@ -36,7 +57,7 @@ max-width: 1112px;
 .text-area{
  display: flex;
  flex-direction: column;
- gap: 2.2em;
+ gap: 2.3em;
  border: 1px solid tomato;
 }
 
@@ -50,9 +71,8 @@ max-width: 1112px;
 }
 
 .para{
- font-size: 1.05rem;
- line-height: 1.6em;
- /* width: 80%; */
+ font-size: 1.1rem;
+ line-height: 1.5em;
  color: hsla(0, 0%, 100%, 0.75);
 }
 
@@ -69,19 +89,24 @@ max-width: 1112px;
  display: flex;
  flex-direction: column;
  justify-content: center;
+ gap: 0.45em;
  border: 1px solid darkgoldenrod;
 }
 
 .num{
 color: hsl(0, 0%, 100%);
 font-weight: 700;
-font-size: 1.13rem;
+font-size: 1.5rem;
 text-transform: uppercase;
 }
 
 .stat-text{
  text-transform: uppercase;
  font-size: 0.7rem;
+ letter-spacing: 0.1em;
  font-weight: 600;
 color: hsla(0, 0%, 100%, 0.6);
+}
+.text2{
+ margin-right: 2.1em;
 }
